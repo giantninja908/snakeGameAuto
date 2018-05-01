@@ -6,9 +6,9 @@ body,canvas{
   padding: 0;
 }
 .info {
-  float: left;
+  float: right;
   overflow: hidden;
-  
+	
 }
 .button {
     background-color: #4CAF50; /* Green */
