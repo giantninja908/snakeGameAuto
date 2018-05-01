@@ -54,6 +54,7 @@
       var pause = false
       var height
       var sizingVar = 2
+      var down = false
       height = window.innerHeight
       width = window.innerWidth
       ctx.clearRect(0, 0, width, height)
@@ -89,7 +90,33 @@
           ctx.fillText("Click to start",65*sizingVar,50*sizingVar)
         }else{
 if(!pause){
-  
+	if(down){
+		if(plrX == 240){
+			down = false
+			rot = 270
+		}
+		if(plrX == 10){
+			down = false
+			rot = 90
+		}
+	}else{
+		if(plrY == 240){
+			if(plrX = 0){
+				rot = 0
+			}else{
+			rot = 90
+			}
+		}else{
+  if(plrX == 240){
+  	down = true
+	  rot = 180
+  }
+		if(plrX == 10){
+  	down = true
+	  rot = 180
+  }
+		}
+     }
   if(!pause){
 
     if(rot == 0){
