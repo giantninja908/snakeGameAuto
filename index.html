@@ -105,6 +105,8 @@ if(!pause){
       plrX -=10
     }
     if(plrX < 0){
+	    var audio = new Audio('Roblox Death Sound Effect.mp3');
+audio.play();
       if(tailLength-1>highscore){
         highscore = tailLength-1
       }
@@ -120,6 +122,8 @@ if(!pause){
 
     }
     if(plrY < 0){
+	    var audio = new Audio('Roblox Death Sound Effect.mp3');
+audio.play();
       if(tailLength-1>highscore){
         highscore = tailLength-1
       }
@@ -147,9 +151,12 @@ if(!pause){
       }
       tailLength =4
       menu = true
-
+var audio = new Audio('Roblox Death Sound Effect.mp3');
+audio.play();
     }
     if(plrY > 250){
+	    var audio = new Audio('Roblox Death Sound Effect.mp3');
+audio.play();
       if(tailLength-1>highscore){
         highscore = tailLength-1
       }
@@ -174,6 +181,8 @@ if(!pause){
       tailY[i] = tailY[i-1]
     }
     if(tailX[i]==plrX&&tailY[i]==plrY&& i!=0){
+	    var audio = new Audio('Roblox Death Sound Effect.mp3');
+audio.play();
       if(tailLength-1>highscore){
         highscore = tailLength-1
       }
@@ -190,6 +199,8 @@ if(!pause){
     }
   }
   if(plrX == rX && plrY == rY){
+	  var audio = new Audio('crunch.mp3');
+audio.play();
     rX = Math.floor(Math.random()*25)*10
     rY = Math.floor(Math.random()*25)*10
     tailX[tailLength] = plrX
